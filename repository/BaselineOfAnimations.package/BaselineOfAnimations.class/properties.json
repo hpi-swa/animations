@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfAnimations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfAnimations",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
