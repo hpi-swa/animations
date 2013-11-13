@@ -1,5 +1,14 @@
 # Animations
 
+1. [How to Install] (#how-to-install)
+2. [How to Use] (#how-to-use)
+2.1. [Simple Example] (#simple-example)
+2.2. [Basic Animation Concept] (#basic-animation-concept)
+2.3. [Variant Animations] (#variant-animations)
+2.4. [Property Animations] (#property-animations)
+2.5. [How to Register Animations] (#let-them-run--how-to-register-animations)
+2.6. [Graphics Animations] (#graphics-animations)
+
 In its current development state, the Morphic implementation of Squeak does not support an extensible mechanism that allows visually appealing transitions whenever a morph's state changes, e.g., positon, rotation, color.
 
 This project provides such an extension to Morphic with the following key-features:
