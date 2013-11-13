@@ -1,13 +1,11 @@
 # Animations
 
-1. [How to Install] (#how-to-install)
-2. [How to Use] (#how-to-use)
-2.1. [Simple Example] (#simple-example)
-2.2. [Basic Animation Concept] (#basic-animation-concept)
-2.3. [Variant Animations] (#variant-animations)
-2.4. [Property Animations] (#property-animations)
-2.5. [How to Register Animations] (#let-them-run--how-to-register-animations)
-2.6. [Graphics Animations] (#graphics-animations)
+1. [Simple Example] (#simple-example)
+1. [Basic Animation Concept] (#basic-animation-concept)
+1. [Variant Animations] (#variant-animations)
+1. [Property Animations] (#property-animations)
+1. [How to Register Animations] (#let-them-run--how-to-register-animations)
+1. [Graphics Animations] (#graphics-animations)
 
 In its current development state, the Morphic implementation of Squeak does not support an extensible mechanism that allows visually appealing transitions whenever a morph's state changes, e.g., positon, rotation, color.
 
@@ -17,22 +15,7 @@ This project provides such an extension to Morphic with the following key-featur
 * support any property of a morph that has an accessor such as `#position:`
 * allow graphic transitions even without the need to change the state of a morph 
 
-## How to Install
-
-Just load the `Animations` package into your Squeak image.
-
-**Warning:** Once installed, unloading will probably cause your image to stop rendering, which means it will hang. That is because some very important messages (such as `WorldState>>doOneCycleFor:`) were overridden and could get lost on unloading.
-
-There are the following sub-packages:
-
-* Animations-Core ... core implementation
-* Animations-Canvas ... canvases to be used in graphics animations
-* Animations-Animations ... some example graphics animations
-* Animations-Tests ... tests for all packages
-
-## How to Use
-
-### Simple Example
+## Simple Example
 
 Open a workspace and create a new morph:
 ```Smalltalk
@@ -49,7 +32,7 @@ myMorph fadeIn.
 ```
 This animation is about 200 milliseconds. If your Squeak image is quite busy it will be not that smooth.
 
-### Basic Animation Concept
+## Basic Animation Concept
 
 In principle, an animation is a timer that has a duration and can run several times to produce loops.
 ```Smalltalk
@@ -99,7 +82,7 @@ AnimAnimation
    finishBlock: [Transcript cr; show: 'Animation finished!'];
    start.
 ```
-### Variant Animations
+## Variant Animations
 
 Variant animations add value interpolation behaviour to animations. There is a start and an end value. During one animation loop `currentValue` changes in this range including the start and the end value itself.
 ```Smalltalk
@@ -135,7 +118,7 @@ AnimVariantAnimation new
    offsetBlock: [ActiveHand position]; "or just #offset:"
    start.
 ```
-### Property Animations
+## Property Animations
 
 Property animations are variant animations that are bound to an object and a property. The `updateCurrentValue:` callback will try to send a keyword message to the object with one argument using the property name:
 ```Smalltalk
@@ -148,7 +131,7 @@ AnimPropertyAnimation new
    start.
 ```
 
-### Let them run! — How to register Animations
+## Let them run! — How to register Animations
 
 Animations are meant to be used in the Squeak UI process. There is a reference time called `WorldState class>>lastCycleTime` and some animations can use the world's main loop to keep themselves running. This is achieved by registering the animation in the `AnimAnimationRegistry`:
 ```Smalltalk
@@ -168,11 +151,11 @@ If you want to keep animations after they finished, you need to unregister them 
 myAnimation isStopped
    ifTrue: [myAnimation unregister].
 ```
-#### Using Processes
+### Using Processes
 
 The animation registry is thread-safe which means that `register` and `unregister` operations are secured and can be called from within any process. However, that process should have a higher priority than the Squeak UI process. Otherwise it could be problematic to acquire the mutex because every world cycle needs it too. 
 
-### Graphics Animations
+## Graphics Animations
 
 Graphics animations are variant animations that modify the visual appearance of a morph and all its submorphs doing simple color mappings. Graphic animations need to be registered.
 ```Smalltalk
