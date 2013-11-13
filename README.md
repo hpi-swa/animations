@@ -90,4 +90,39 @@ AnimAnimation
    finishBlock: [Transcript cr; show: 'Animation finished!'];
    start.
 ```
+### Variant Animations
 
+Variant animations add value interpolation behaviour to animations. There is a start and an end value. During one animation loop `currentValue` changes in this range including the start and the end value itself.
+```Smalltalk
+AnimVariantAnimation new
+   duration: 500;
+   startValue: 1;
+   endValue: 10;
+   start.
+```
+Having `updateCurrentTime:` called frequently somehow, `updateCurrentValue` can be called frequently too to trigger a callback that allows variant animations to change their internal state or perform other operations:
+```Smalltalk
+MyVariantAnimation>>updateCurrentValue: newValue
+   Transcript cr; show: newValue asString.
+```
+The value interpolation uses an easing curve that maps a value between 0.0 and 1.0 to another value between 0.0 and 1.0 or maybe more. This can be used to modify the normal linear interpolation and get some more pleasing effects. Overshooting is possible but 1.0 should map to 1.0 because the loop ends there. Here is an example for a custom easing curve:
+```Smalltalk
+MyEasingCurve>>valueForProgress: aFloat
+   ^ aFloat * aFloat
+
+AnimVariantAnimation new
+   duration: 500;
+   startValue: 1;
+   endValue: 10;
+   easingCurve: MyEasingCurve new;
+   start.
+```
+Variant animations make use of the `direction` attribute which means the value goes from `endValue` to `startValue` if backwards. An offset can be specified to allow relative value changes:
+```Smalltalk
+AnimVariantAnimation new
+   duration: 500;
+   startValue: 1@1;
+   endValue: 10@10;
+   offsetBlock: [ActiveHand position]; "or just #offset:"
+   start.
+```
