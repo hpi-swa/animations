@@ -162,3 +162,38 @@ myAnimation isStopped
 #### Using Processes
 
 The animation registry is thread-safe which means that `register` and `unregister` operations are secured and can be called from within any process. However, that process should have a higher priority than the Squeak UI process. Otherwise it could be problematic to acquire the mutex because every world cycle needs it too. 
+
+### Graphics Animations
+
+Graphics animations are variant animations that modify the visual appearance of a morph and all its submorphs doing simple color mappings. Graphic animations need to be registered.
+```Smalltalk
+AnimAlphaBlendAnimation new
+   morph: myMorph;
+   duration: 500;
+   startValue: 0.0;
+   endValue: 1.0;
+   start;
+   register. "Always needed for graphics animations!"
+```
+There is no need to reimplement `updateCurrentValue:` but `transformedCanvas:` which returns a custom `AnimColorMappingCanvas` to be used during the drawing routine of morphs:
+```Smalltalk
+MyAlphaBlendingAnimation>>transformedCanvas: aCanvas
+   ^ (MyAlphaBlendingCanvas
+      on: aCanvas)
+      alpha: self currentValue "Interpolated alpha value."
+```
+Having this, a simple fade-out animation for morphs can be implemented as follows:
+```Smalltalk
+MyMorph>>fadeOut
+   AnimAlphaBlendAnimation new
+      morph: self;
+      startValue: 1.0; "totally visible"
+      endValue: 0.0; "invisible"
+      duration: 200;
+      finishBlock: [self hide]; "Executed when animation finished."
+      register;
+      start: #deleteWhenFinished.
+```
+Color mappings apply to all submorphs in a morph. To prevent a morph from being color-mapped by its owner use the property `ignoresColorMappings`.
+
+If you want to hold a certain color mapping state, you must not delete an animation when it has finished. Otherwise the color mapping will disappear. An example would be to gray-out or darken a morph using `AnimBrightnessAnimation` or `AnimGrayscaleAnimation`. 
