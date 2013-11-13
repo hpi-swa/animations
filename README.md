@@ -126,3 +126,39 @@ AnimVariantAnimation new
    offsetBlock: [ActiveHand position]; "or just #offset:"
    start.
 ```
+### Property Animations
+
+Property animations are variant animations that are bound to an object and a property. The `updateCurrentValue:` callback will try to send a keyword message to the object with one argument using the property name:
+```Smalltalk
+AnimPropertyAnimation new
+   duration: 500;
+   target: myMorph;
+   property: #position; "There should be an accessor method #position:."
+   startValue: 10@10;
+   endValue: 100@100;
+   start.
+```
+
+### Let them run! — How to register Animations
+
+Animations are meant to be used in the Squeak UI process. There is a reference time called `WorldState class>>lastCycleTime` and some animations can use the world's main loop to keep themselves running. This is achieved by registering the animation in the `AnimAnimationRegistry`:
+```Smalltalk
+AnimPropertyAnimation new
+   duration: 500;
+   target: myMorph;
+   property: #position;
+   startValue: 10@10;
+   endValue: 100@100;
+   start: #deleteWhenFinished; "Automatic registry clean-up. No need to unregister."
+   register. "Add to animation registry."
+```
+Only `AnimPropertyAnimation` and `AnimGraphicsAnimation` can be registered.
+
+If you want to keep animations after they finished, you need to unregister them manually, for example, when it has stopped:
+```Smalltalk
+myAnimation isStopped
+   ifTrue: [myAnimation unregister].
+```
+#### Using Processes
+
+The animation registry is thread-safe which means that `register` and `unregister` operations are secured and can be called from within any process. However, that process should have a higher priority than the Squeak UI process. Otherwise it could be problematic to acquire the mutex because every world cycle needs it too. 
