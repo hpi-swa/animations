@@ -20,3 +20,24 @@ There are the following sub-packages:
 * Animations-Canvas ... canvases to be used in graphics animations
 * Animations-Animations ... some example graphics animations
 * Animations-Tests ... tests for all packages
+
+## How to Use
+
+### Simple Example
+
+Open a workspace and create a new morph:
+```Smalltalk
+| myMorph |
+myMorph := Morph new topLeft: 100@100; extent: 400@400; openInWorld.
+```
+Now let this morph disappear. Try the close all unnecessary morphs for performance reasons:
+```Smalltalk
+myMorph fadeOut.
+```
+It's gone! Now get it back:
+```Smalltalk
+myMorph fadeIn.
+```
+This animation is about 200 milliseconds. If your Squeak image is quite busy it will be not that smooth. 
+
+
