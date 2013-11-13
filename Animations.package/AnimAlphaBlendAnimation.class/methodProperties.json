@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"example1" : "mt 6/7/2010 15:24:37.486",
+		"example2" : "mt 6/7/2010 15:24:37.578",
+		"fadeInOn:duration:" : "mt 5/14/2010 20:27:06.784",
+		"fadeInOn:to:duration:" : "mt 5/14/2010 19:16:33.804",
+		"fadeOutOn:duration:" : "mt 5/14/2010 19:18:05.165",
+		"fadeOutOn:to:duration:" : "mt 5/14/2010 19:17:33.897" },
+	"instance" : {
+		"transformedCanvas:" : "mt 6/7/2010 15:26:10.967",
+		"type" : "mt 5/17/2010 14:22:08.807" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Animations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnimBrightnessAnimation",
+	"pools" : [
+		 ],
+	"super" : "AnimGraphicsAnimation",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+*animations-core
+originalCanvas
+
+	^ self

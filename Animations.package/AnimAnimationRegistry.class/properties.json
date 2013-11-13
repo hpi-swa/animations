@@ -1,0 +1,19 @@
+{
+	"category" : "Animations-Core",
+	"classinstvars" : [
+		"instance",
+		"morphicDrawBlock" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 5/17/2010 15:48:31.878",
+	"instvars" : [
+		"propertyAnimations",
+		"graphicsAnimations",
+		"otherAnimations",
+		"mutex",
+		"lastGCTime" ],
+	"name" : "AnimAnimationRegistry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

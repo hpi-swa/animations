@@ -1,0 +1,15 @@
+{
+	"category" : "Animations-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"canvas",
+		"morph" ],
+	"name" : "AnimGraphicsAnimationTest",
+	"pools" : [
+		 ],
+	"super" : "AnimTimedAnimationTest",
+	"type" : "normal" }

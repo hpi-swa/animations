@@ -1,0 +1,1 @@
+I extend the abstract animation with some value interpolation behaviour (besides the time). You can keep me running by calling #updateCurrentTime and #updateCurrentValue frequently.

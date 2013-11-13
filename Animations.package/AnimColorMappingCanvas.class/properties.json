@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Canvas",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 5/17/2010 08:42:09.163",
+	"instvars" : [
+		 ],
+	"name" : "AnimColorMappingCanvas",
+	"pools" : [
+		 ],
+	"super" : "ColorMappingCanvas",
+	"type" : "normal" }

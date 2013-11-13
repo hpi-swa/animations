@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Canvas",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ratio" ],
+	"name" : "AnimGrayscaleMappingCanvas",
+	"pools" : [
+		 ],
+	"super" : "AnimColorMappingCanvas",
+	"type" : "normal" }

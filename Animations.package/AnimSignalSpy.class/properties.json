@@ -1,0 +1,15 @@
+{
+	"category" : "Animations-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 5/14/2010 11:09:41.178",
+	"instvars" : [
+		"object",
+		"signals" ],
+	"name" : "AnimSignalSpy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

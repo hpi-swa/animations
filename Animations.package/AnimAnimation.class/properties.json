@@ -1,0 +1,25 @@
+{
+	"category" : "Animations-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ReferenceTime" ],
+	"commentStamp" : "mt 6/30/2011 09:59:07.207",
+	"instvars" : [
+		"deletionPolicy",
+		"direction",
+		"state",
+		"currentLoop",
+		"currentTime",
+		"duration",
+		"loopCount",
+		"startTime",
+		"pauseDuration",
+		"resetAfterFinished",
+		"finishedOnce",
+		"finishBlock" ],
+	"name" : "AnimAnimation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

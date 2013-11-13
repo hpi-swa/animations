@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"main" : "mt 5/14/2010 19:36:29.412",
+		"morphicDrawBlock" : "mt 5/4/2011 15:24:55.956",
+		"morphicDrawBlock:" : "mt 5/4/2011 15:18:03.063",
+		"reset" : "mt 6/16/2010 12:08:25.188" },
+	"instance" : {
+		"animationsFor:" : "mt 5/17/2010 15:46:38.126",
+		"clear" : "mt 4/22/2011 11:51:54.289",
+		"displayFPS" : "mt 5/3/2011 11:22:28.201",
+		"emergencyClearFor:" : "mt 7/8/2013 11:18:36.105",
+		"garbageCollect" : "mt 11/12/2013 11:12:54.636",
+		"graphicsAnimations" : "mt 5/14/2010 19:34:30.155",
+		"isAtLeastOneGraphicsAnimationRunningFor:" : "mt 4/22/2011 11:52:48.105",
+		"mutex" : "mt 5/17/2010 15:40:56.495",
+		"otherAnimations" : "mt 11/12/2013 11:11:49.57",
+		"propertyAnimations" : "mt 5/14/2010 19:34:13.507",
+		"register:" : "mt 11/12/2013 11:13:55.898",
+		"transformedCanvasFor:from:" : "mt 4/22/2011 11:53:38.36",
+		"tryGarbageCollect" : "mt 3/29/2011 09:21:29.854",
+		"unregister:" : "mt 11/12/2013 12:28:13.963",
+		"updateAnimations" : "mt 7/5/2013 13:07:03.824",
+		"updateCurrentTime" : "mt 11/12/2013 11:14:57.538",
+		"updateCurrentValues" : "mt 5/3/2011 13:23:37.536" } }

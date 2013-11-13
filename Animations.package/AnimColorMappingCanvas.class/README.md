@@ -1,0 +1,1 @@
+This is an extended version of the ColorMappingCanvas that supports more functionality of a FormCanvas.

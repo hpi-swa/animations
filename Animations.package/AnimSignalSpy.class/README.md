@@ -1,0 +1,1 @@
+I am a support class to test the Squeak changed/update mechanism. Should only be used within one thread/process.

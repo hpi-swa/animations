@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Canvas",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"alpha" ],
+	"name" : "AnimAlphaBlendingCanvas",
+	"pools" : [
+		 ],
+	"super" : "AnimColorMappingCanvas",
+	"type" : "normal" }

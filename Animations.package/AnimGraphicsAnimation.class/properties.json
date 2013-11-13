@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 5/14/2010 16:44:02.071",
+	"instvars" : [
+		"morph" ],
+	"name" : "AnimGraphicsAnimation",
+	"pools" : [
+		 ],
+	"super" : "AnimVariantAnimation",
+	"type" : "normal" }

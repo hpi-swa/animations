@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"morph" ],
+	"name" : "AnimAnimationRegistryTest",
+	"pools" : [
+		 ],
+	"super" : "AnimTimedAnimationTest",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Animations-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 5/14/2010 19:28:46.069",
+	"instvars" : [
+		"type",
+		"conversionBlock" ],
+	"name" : "AnimEasingCurve",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

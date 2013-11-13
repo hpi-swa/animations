@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Canvas",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"saturation" ],
+	"name" : "AnimSaturationMappingCanvas",
+	"pools" : [
+		 ],
+	"super" : "AnimColorMappingCanvas",
+	"type" : "normal" }

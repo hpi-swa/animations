@@ -1,0 +1,1 @@
+I am capable of defining the velocity for the interpolation of an XpfVariantAnimation.

@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Canvas",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"brightness" ],
+	"name" : "AnimBrightnessMappingCanvas",
+	"pools" : [
+		 ],
+	"super" : "AnimColorMappingCanvas",
+	"type" : "normal" }

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"example1" : "mt 6/16/2010 10:39:35.692",
+		"on:property:start:end:duration:" : "mt 5/14/2010 16:34:42.775" },
+	"instance" : {
+		"isPropertyAnimation" : "mt 5/14/2010 19:31:56.258",
+		"property" : "mt 5/14/2010 14:48:24.768",
+		"property:" : "mt 5/14/2010 16:34:33.236",
+		"target" : "mt 6/16/2010 11:55:40.521",
+		"target:" : "mt 6/16/2010 12:04:51.334",
+		"updateCurrentValue:" : "mt 6/16/2010 11:56:26.322" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"spy" ],
+	"name" : "AnimAnimationTest",
+	"pools" : [
+		 ],
+	"super" : "AnimTimedAnimationTest",
+	"type" : "normal" }

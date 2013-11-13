@@ -1,0 +1,1 @@
+I am capable of graphic effects, e.g., fade-in or fade-out.

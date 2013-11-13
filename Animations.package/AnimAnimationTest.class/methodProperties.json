@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "mt 6/7/2010 15:23:41.44",
+		"testAnimationEndState" : "mt 5/12/2010 11:50:16.816",
+		"testAnimationStates" : "mt 5/12/2010 11:53:04.34",
+		"testFinishBlock" : "mt 12/1/2012 15:11:13.829",
+		"testInfiniteAnimation" : "mt 5/12/2010 11:58:56.127",
+		"testOtherSignals" : "mt 5/14/2010 11:25:15.675",
+		"testPause" : "mt 5/12/2010 11:56:24.945",
+		"testSignals" : "mt 5/14/2010 11:19:06.573",
+		"testSimpleAnimation" : "mt 5/12/2010 11:45:59.651",
+		"testStartAnimation" : "mt 5/12/2010 12:00:51.331",
+		"testStateSignals" : "mt 5/14/2010 11:19:20.924",
+		"testStopAnimation" : "mt 5/14/2010 11:13:35.239",
+		"testTotalDuration" : "mt 5/12/2010 11:51:01.127" } }

@@ -1,0 +1,15 @@
+{
+	"category" : "Animations-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"target",
+		"property" ],
+	"name" : "AnimPropertyAnimation",
+	"pools" : [
+		 ],
+	"super" : "AnimVariantAnimation",
+	"type" : "normal" }

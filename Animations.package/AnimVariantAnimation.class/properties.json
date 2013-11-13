@@ -1,0 +1,18 @@
+{
+	"category" : "Animations-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 5/14/2010 14:43:20.077",
+	"instvars" : [
+		"easingCurve",
+		"startValue",
+		"endValue",
+		"offset",
+		"offsetBlock" ],
+	"name" : "AnimVariantAnimation",
+	"pools" : [
+		 ],
+	"super" : "AnimAnimation",
+	"type" : "normal" }
