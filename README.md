@@ -1,4 +1,4 @@
-# Animations
+# Animations [![Build Status](https://secure.travis-ci.org/marceltaeumel/animations.png?branch=master)](http://travis-ci.org/marceltaeumel/animations)
 
 1. [Simple Example] (#simple-example)
 1. [Basic Animation Concept] (#basic-animation-concept)
