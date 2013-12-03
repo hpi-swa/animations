@@ -1,1 +1,1 @@
-(name 'BaselineOfAnimations-mt.1' message 'empty log message' id '6f423482-e7ed-e240-ace6-ff12b04ba90f' date '13 November 2013' time '4:52:49.673 pm' author 'mt' ancestors () stepChildren ())
+(name 'BaselineOfAnimations-mt.2' message 'group for travis-ci added' id '70995702-263a-3b49-a836-1f666a21e312' date '3 December 2013' time '3:39:06.23 pm' author 'mt' ancestors ((name 'BaselineOfAnimations-mt.1' message 'empty log message' id '6f423482-e7ed-e240-ace6-ff12b04ba90f' date '13 November 2013' time '4:52:49.673 pm' author 'mt' ancestors () stepChildren ())) stepChildren ())
