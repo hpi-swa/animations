@@ -4,5 +4,5 @@ updateCurrentValue: aValue
 	self target ifNil: [^ self].
 	
 	self target
-		perform: (self property, #:) asSymbol
+		perform: self property asMutator
 		with: aValue.
