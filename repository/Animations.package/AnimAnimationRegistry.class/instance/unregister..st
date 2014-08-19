@@ -8,7 +8,7 @@ unregister: anAnimation
 		anAnimation isGraphicsAnimation
 			ifTrue: [
 				self graphicsAnimations remove: anAnimation ifAbsent: [].
-				anAnimation morph ifNotNil: [:m | m animations remove: anAnimation].
+				anAnimation morph ifNotNil: [:m | m animations remove: anAnimation ifAbsent: []].
 				^ self].
 			
 		self otherAnimations remove: anAnimation ifAbsent: []].

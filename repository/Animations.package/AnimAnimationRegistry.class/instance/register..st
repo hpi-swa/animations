@@ -3,14 +3,19 @@ register: anAnimation
 
 	self mutex critical: [
 		anAnimation isPropertyAnimation
-			ifTrue: [self propertyAnimations add: anAnimation. ^ self].
+			ifTrue: [
+				(self propertyAnimations includes: anAnimation)
+					ifFalse: [self propertyAnimations add: anAnimation. ^ self]].
 		
 		anAnimation isGraphicsAnimation
 			ifTrue: [
-				self graphicsAnimations add: anAnimation.
+				(self graphicsAnimations includes: anAnimation)
+					ifFalse: [	self graphicsAnimations add: anAnimation].
 				anAnimation morph ifNotNil: [:m |
-					m animations add: anAnimation.
+					(m animations includes: anAnimation)
+						ifFalse: [m animations add: anAnimation].
 					m redrawLater].
 				^ self].
 		
-		self otherAnimations add: anAnimation].
+		(self otherAnimations includes: anAnimation)
+			ifFalse: [self otherAnimations add: anAnimation]].
