@@ -1,5 +1,6 @@
 # Animations [![Build Status](https://secure.travis-ci.org/marceltaeumel/animations.png?branch=master)](http://travis-ci.org/marceltaeumel/animations)
 
+1. [How to Install] (#how-to-install)
 1. [Simple Example] (#simple-example)
 1. [Basic Animation Concept] (#basic-animation-concept)
 1. [Variant Animations] (#variant-animations)
@@ -14,6 +15,21 @@ This project provides such an extension to Morphic with the following key-featur
 * respect timeliness no matter how high the cpu load is
 * support any property of a morph that has an accessor such as `#position:`
 * allow graphic transitions even without the need to change the state of a morph 
+
+##How to Install
+
+1. Get [Squeak 4.4 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
+2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
+3. Finally, load VIVIDE into your Squeak image by executing the following snippet in a workspace:
+
+```Smalltalk
+Metacello new
+  baseline: 'Animations';
+  repository: 'github://marceltaeumel/animations/repository';
+  load.
+```
+
+**Close all transcript windows before loading!**
 
 ## Simple Example
 
