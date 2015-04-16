@@ -3,8 +3,9 @@
 		 },
 	"instance" : {
 		"animations" : "mt 4/16/2015 14:34",
-		"initMorphic" : "mt 4/16/2015 16:00",
-		"initialize" : "mt 4/16/2015 16:00",
-		"installPasteUpAsWorld:" : "mt 4/16/2015 16:00",
+		"initMorphic" : "mt 4/16/2015 15:55",
+		"initWorldState" : "mt 4/16/2015 16:39",
+		"initialize" : "mt 4/16/2015 16:28",
+		"installPasteUpAsWorld:" : "mt 4/16/2015 16:28",
 		"isAnimatedMorphic" : "mt 4/16/2015 14:20",
 		"spawnNewProcess" : "mt 4/16/2015 15:53" } }

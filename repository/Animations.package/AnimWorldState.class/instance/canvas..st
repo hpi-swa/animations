@@ -1,5 +1,7 @@
 canvas
 canvas: aCanvas
 
-	[super canvas: (AnimFormCanvas adoptInstance: aCanvas)]
-		on: Error do: [super canvas: aCanvas].
+	(aCanvas class == FormCanvas)  
+		ifTrue: [AnimFormCanvas adoptInstance: aCanvas].
+
+	super canvas: aCanvas.

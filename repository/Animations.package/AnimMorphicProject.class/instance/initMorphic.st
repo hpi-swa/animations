@@ -2,4 +2,4 @@ initialize
 initMorphic
 
 	super initMorphic.
-	world initForProject: AnimWorldState new.
+	world initForProject: WorldState new.
