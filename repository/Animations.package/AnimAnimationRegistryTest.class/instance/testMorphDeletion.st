@@ -1,18 +1,16 @@
 tests
 testMorphDeletion
 
-	AnimAnimationRegistry reset.
-
-	self assert: AnimAnimationRegistry main graphicsAnimations isEmpty.
+	self assert: registry graphicsAnimations isEmpty.
 
 	sut := AnimGraphicsAnimation new
 		morph: Morph new;
-		duration: 5000;
-		register.
+		duration: 5000.
+	registry register: sut.
 
-	self assert: 1 equals: AnimAnimationRegistry main graphicsAnimations size.
+	self assert: 1 equals: registry graphicsAnimations size.
 	
 	Smalltalk garbageCollect.
-	AnimAnimationRegistry main garbageCollect.
+	registry garbageCollect.
 	
-	self assert: AnimAnimationRegistry main graphicsAnimations isEmpty.
+	self assert: registry graphicsAnimations isEmpty.

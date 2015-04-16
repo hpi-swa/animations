@@ -1,4 +1,5 @@
 registering
 unregister
 
-	AnimAnimationRegistry main unregister: self.
+	(Project current isMorphic and: [Project current isAnimatedMorphic])
+		ifTrue: [Project current animations unregister: self].

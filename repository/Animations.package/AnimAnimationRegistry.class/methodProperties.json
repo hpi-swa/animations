@@ -1,15 +1,13 @@
 {
 	"class" : {
-		"main" : "mt 5/14/2010 19:36:29.412",
-		"morphicDrawBlock" : "mt 5/4/2011 15:24:55.956",
-		"morphicDrawBlock:" : "mt 5/4/2011 15:18:03.063",
-		"reset" : "mt 6/16/2010 12:08:25.188" },
+		"main" : "mt 4/16/2015 15:24",
+		"reset" : "mt 4/16/2015 15:32" },
 	"instance" : {
 		"animationsFor:" : "mt 5/17/2010 15:46:38.126",
 		"clear" : "mt 4/22/2011 11:51:54.289",
 		"displayFPS" : "mt 5/3/2011 11:22:28.201",
 		"emergencyClearFor:" : "mt 7/8/2013 11:18:36.105",
-		"garbageCollect" : "mt 11/12/2013 11:12:54.636",
+		"garbageCollect" : "mt 4/16/2015 16:12",
 		"graphicsAnimations" : "mt 5/14/2010 19:34:30.155",
 		"isAtLeastOneGraphicsAnimationRunningFor:" : "mt 4/22/2011 11:52:48.105",
 		"mutex" : "mt 5/17/2010 15:40:56.495",
@@ -19,6 +17,6 @@
 		"transformedCanvasFor:from:" : "mt 4/22/2011 11:53:38.36",
 		"tryGarbageCollect" : "mt 3/29/2011 09:21:29.854",
 		"unregister:" : "mt 8/19/2014 08:43:52.866",
-		"updateAnimations" : "mt 7/5/2013 13:07:03.824",
-		"updateCurrentTime" : "mt 11/12/2013 11:14:57.538",
-		"updateCurrentValues" : "mt 5/3/2011 13:23:37.536" } }
+		"updateAnimations" : "mt 4/16/2015 15:50",
+		"updateCurrentTime" : "mt 4/16/2015 15:51",
+		"updateCurrentValues" : "mt 4/16/2015 16:12" } }

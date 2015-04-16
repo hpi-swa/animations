@@ -1,4 +1,6 @@
 registering
 register
 
-	AnimAnimationRegistry main register: self.
+	(Project current isMorphic and: [Project current isAnimatedMorphic])
+		ifTrue: [Project current animations register: self]
+		ifFalse: [self finish].

@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnimWorldState",
+	"pools" : [
+		 ],
+	"super" : "WorldState",
+	"type" : "normal" }

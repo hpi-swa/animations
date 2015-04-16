@@ -5,4 +5,4 @@ updateCurrentValues
 		anim updateCurrentValue.
 		"GC here too. Needs mutex?"
 		(anim target isNil or: [anim finishedOnce and: [anim deletionPolicy = #deleteWhenFinished]])
-			ifTrue: [anim unregister]].
+			ifTrue: [self unregister: anim]].

@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnimFormCanvas",
+	"pools" : [
+		 ],
+	"super" : "FormCanvas",
+	"type" : "normal" }

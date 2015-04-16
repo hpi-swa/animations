@@ -2,6 +2,7 @@ updating
 updateAnimations
 
 	[[self mutex critical: [
+		referenceTime := Time millisecondClockValue.
 		self
 			updateCurrentTime;
 			updateCurrentValues.

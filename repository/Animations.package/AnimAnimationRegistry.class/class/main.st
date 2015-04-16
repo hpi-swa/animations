@@ -1,5 +1,6 @@
-instance creation
+default
 main
-	"Return the main registry for animations that is queried in each world cycle."
 	
-	^ instance ifNil: [instance := self new]
+	^ (Project isMorphic and: [Project isAnimatedMorphic])
+		ifTrue: [Project current animations]
+		ifFalse: [nil]

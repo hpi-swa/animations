@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"animations" ],
+	"name" : "AnimMorphicProject",
+	"pools" : [
+		 ],
+	"super" : "MorphicProject",
+	"type" : "normal" }

@@ -11,7 +11,8 @@
 		"graphicsAnimations",
 		"otherAnimations",
 		"mutex",
-		"lastGCTime" ],
+		"lastGCTime",
+		"referenceTime" ],
 	"name" : "AnimAnimationRegistry",
 	"pools" : [
 		 ],

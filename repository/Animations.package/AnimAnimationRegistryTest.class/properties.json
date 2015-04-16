@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"morph" ],
+		"morph",
+		"registry" ],
 	"name" : "AnimAnimationRegistryTest",
 	"pools" : [
 		 ],
