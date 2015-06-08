@@ -1,4 +1,4 @@
-# Animations [![Build Status](https://secure.travis-ci.org/hpi-swa/animations.png?branch=master)](http://travis-ci.org/marceltaeumel/animations)
+# Animations [![Build Status](https://secure.travis-ci.org/hpi-swa/animations.png?branch=master)](http://travis-ci.org/hpi-swa/animations)
 
 1. [How to Install] (#how-to-install)
 1. [Simple Example] (#simple-example)
