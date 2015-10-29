@@ -25,7 +25,7 @@ This project provides such an extension to Morphic with the following key-featur
 ```Smalltalk
 Metacello new
   baseline: 'Animations';
-  repository: 'github://marceltaeumel/animations/repository';
+  repository: 'github://hpi-swa/animations/repository';
   load.
 ```
 
