@@ -1,6 +1,6 @@
 default
 main
 	
-	^ (Project isMorphic and: [Project isAnimatedMorphic])
+	^ (Project current isMorphic and: [Project current isAnimatedMorphic])
 		ifTrue: [Project current animations]
 		ifFalse: [nil]
