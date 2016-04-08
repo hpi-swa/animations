@@ -3,15 +3,8 @@
 language: smalltalk
 sudo: false
 
-os: osx
-
 smalltalk:
   - Squeak-trunk
   - Squeak-5.0
   - Squeak-4.6
-
-baseline: Animations
-
-env:
-  global:
-    - PACKAGES="/repository"
+  - Squeak-4.5
