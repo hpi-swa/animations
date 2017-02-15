@@ -20,7 +20,7 @@ This project provides such an extension to Morphic with the following key-featur
 
 1. Get [Squeak 4.4 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
 2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
-3. Finally, load VIVIDE into your Squeak image by executing the following snippet in a workspace:
+3. Finally, load Animations into your Squeak image by executing the following snippet in a workspace:
 
 ```Smalltalk
 Metacello new
