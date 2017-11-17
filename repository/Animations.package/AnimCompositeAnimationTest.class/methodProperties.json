@@ -8,5 +8,6 @@
 		"test02Running" : "mt 11/17/2017 17:37",
 		"test03LoopTwice" : "mt 11/17/2017 17:24",
 		"test04LoopInfinite" : "mt 11/17/2017 17:26",
-		"test05NoInfiniteParts" : "mt 11/17/2017 17:28",
+		"test05SingleInfinitePart" : "mt 11/17/2017 20:16",
+		"test06OnlyInfiniteEnd" : "mt 11/17/2017 20:24",
 		"wait:" : "mt 11/17/2017 16:57" } }
