@@ -1,12 +1,12 @@
 # Animations [![Build Status](https://secure.travis-ci.org/hpi-swa/animations.png?branch=master)](http://travis-ci.org/hpi-swa/animations)
 
-1. [How to Install] (#how-to-install)
-1. [Simple Example] (#simple-example)
-1. [Basic Animation Concept] (#basic-animation-concept)
-1. [Variant Animations] (#variant-animations)
-1. [Property Animations] (#property-animations)
-1. [How to Register Animations] (#let-them-run--how-to-register-animations)
-1. [Graphics Animations] (#graphics-animations)
+1. [How to Install](#how-to-install)
+1. [Simple Example](#simple-example)
+1. [Basic Animation Concept](#basic-animation-concept)
+1. [Variant Animations](#variant-animations)
+1. [Property Animations](#property-animations)
+1. [How to Register Animations](#let-them-run--how-to-register-animations)
+1. [Graphics Animations](#graphics-animations)
 
 In its current development state, the Morphic implementation of Squeak does not support an extensible mechanism that allows visually appealing transitions whenever a morph's state changes, e.g., positon, rotation, color.
 
@@ -16,11 +16,11 @@ This project provides such an extension to Morphic with the following key-featur
 * support any property of a morph that has an accessor such as `#position:`
 * allow graphic transitions even without the need to change the state of a morph 
 
-##How to Install
+## How to Install
 
 1. Get [Squeak 4.4 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
 2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
-3. Finally, load VIVIDE into your Squeak image by executing the following snippet in a workspace:
+3. Finally, load Animations into your Squeak image by executing the following snippet in a workspace:
 
 ```Smalltalk
 Metacello new
