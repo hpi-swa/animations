@@ -10,5 +10,8 @@ unregister: anAnimation
 				self graphicsAnimations remove: anAnimation ifAbsent: [].
 				anAnimation morph ifNotNil: [:m | m animations remove: anAnimation ifAbsent: []].
 				^ self].
-			
+		
+		anAnimation isCompositeAnimation
+			ifTrue: [self compositeAnimations remove: anAnimation ifAbsent: []. ^ self].
+		
 		self otherAnimations remove: anAnimation ifAbsent: []].

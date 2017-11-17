@@ -9,6 +9,7 @@
 	"instvars" : [
 		"propertyAnimations",
 		"graphicsAnimations",
+		"compositeAnimations",
 		"otherAnimations",
 		"mutex",
 		"lastGCTime",
@@ -16,5 +17,5 @@
 	"name" : "AnimAnimationRegistry",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "DynamicVariable",
 	"type" : "normal" }

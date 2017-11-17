@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:" : "mt 11/17/2017 17:29",
+		"addAll:" : "mt 11/17/2017 17:27",
+		"animations" : "mt 11/17/2017 16:27",
+		"animations:" : "mt 11/17/2017 15:30",
+		"current" : "mt 11/17/2017 16:28",
+		"current:" : "mt 11/17/2017 15:30",
+		"currentAnimation" : "mt 11/17/2017 16:28",
+		"duration" : "mt 11/17/2017 15:42",
+		"hasNext" : "mt 11/17/2017 16:03",
+		"includesGraphicsAnimationFor:" : "mt 11/17/2017 17:54",
+		"includesPropertyAnimationFor:" : "mt 11/17/2017 17:55",
+		"isCompositeAnimation" : "mt 11/17/2017 17:49",
+		"pause" : "mt 11/17/2017 16:13",
+		"resume" : "mt 11/17/2017 16:13",
+		"start:" : "mt 11/17/2017 16:20",
+		"startNext" : "mt 11/17/2017 17:32",
+		"stop" : "mt 11/17/2017 17:32",
+		"toEnd" : "mt 11/17/2017 16:20",
+		"toStart" : "mt 11/17/2017 16:20",
+		"updateState" : "mt 11/17/2017 16:22" } }

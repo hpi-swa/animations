@@ -1,0 +1,4 @@
+testing
+isCompositeAnimation
+
+	^ true

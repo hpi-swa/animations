@@ -1,0 +1,4 @@
+default
+default 
+
+	^ self main

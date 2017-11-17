@@ -3,8 +3,10 @@
 		 },
 	"instance" : {
 		"animations" : "mt 6/15/2012 10:27:03.804",
+		"compositeAnimations" : "mt 11/17/2017 17:57",
 		"darken" : "mt 5/17/2010 14:34:02.46",
 		"darkenAnimation" : "mt 6/7/2010 15:24:50.774",
+		"deleteAnimations" : "mt 11/17/2017 17:59",
 		"fadeIn" : "mt 5/17/2010 15:03:35.323",
 		"fadeInThen:" : "mt 6/7/2010 15:24:37.806",
 		"fadeOut" : "mt 5/17/2010 14:56:48.698",
@@ -13,8 +15,12 @@
 		"ignoresColorMappings" : "mt 5/17/2010 16:42:06.037",
 		"ignoresColorMappings:" : "mt 5/17/2010 16:34:56.54",
 		"lighten" : "mt 5/3/2012 09:44:44.756",
+		"pauseAnimations" : "mt 11/17/2017 17:58",
+		"pulse" : "mt 11/17/2017 17:51",
 		"redraw" : "mt 6/16/2010 12:00:04.032",
 		"redrawLater" : "mt 6/16/2010 11:59:55.64",
+		"resumeAnimations" : "mt 11/17/2017 17:58",
+		"stopAnimations" : "mt 11/17/2017 17:58",
 		"transformedCanvasOn:" : "mt 4/16/2015 15:16",
 		"walkToPosition:" : "mt 6/7/2010 15:25:32.226",
 		"warpToPosition:" : "mt 5/18/2010 17:52:00.59" } }

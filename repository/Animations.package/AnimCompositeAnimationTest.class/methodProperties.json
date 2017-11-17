@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"performTest" : "mt 11/17/2017 16:38",
+		"setUp" : "mt 11/17/2017 16:26",
+		"test01Duration" : "mt 11/17/2017 16:27",
+		"test02Running" : "mt 11/17/2017 17:37",
+		"test03LoopTwice" : "mt 11/17/2017 17:24",
+		"test04LoopInfinite" : "mt 11/17/2017 17:26",
+		"test05NoInfiniteParts" : "mt 11/17/2017 17:28",
+		"wait:" : "mt 11/17/2017 16:57" } }

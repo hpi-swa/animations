@@ -7,4 +7,5 @@ clear
 			anim morph ifNotNil: [:m | m removeProperty: #animations]].
 		
 		propertyAnimations := nil.
-		graphicsAnimations := nil].
+		graphicsAnimations := nil.
+		compositeAnimations := nil].

@@ -4,4 +4,5 @@ updateCurrentTime
 	
 	self propertyAnimations do: [:anim | anim updateCurrentTime: referenceTime].
 	self graphicsAnimations do: [:anim | anim updateCurrentTime: referenceTime].
+	self compositeAnimations do: [:anim | anim updateCurrentTime: referenceTime].
 	self otherAnimations do: [:anim | anim updateCurrentTime: referenceTime].

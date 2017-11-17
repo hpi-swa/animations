@@ -1,7 +1,7 @@
 control - private
 finish
 
-	self stop.
+	self state: #stopped.
 	
 	self resetAfterFinished
 		ifTrue: [self toStart]
