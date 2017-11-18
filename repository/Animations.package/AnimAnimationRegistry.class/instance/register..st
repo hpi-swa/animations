@@ -5,7 +5,8 @@ register: anAnimation
 		anAnimation isPropertyAnimation
 			ifTrue: [
 				(self propertyAnimations includes: anAnimation)
-					ifFalse: [self propertyAnimations add: anAnimation. ^ self]].
+					ifFalse: [self propertyAnimations add: anAnimation].
+				^ self].
 		
 		anAnimation isGraphicsAnimation
 			ifTrue: [
@@ -20,7 +21,8 @@ register: anAnimation
 		anAnimation isCompositeAnimation
 			ifTrue: [
 				(self compositeAnimations includes: anAnimation)
-					ifFalse: [self compositeAnimations add: anAnimation. ^ self]].
+					ifFalse: [self compositeAnimations add: anAnimation].
+				^ self].
 		
 		(self otherAnimations includes: anAnimation)
 			ifFalse: [self otherAnimations add: anAnimation]].

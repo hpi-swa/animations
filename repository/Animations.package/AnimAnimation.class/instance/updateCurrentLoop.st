@@ -1,6 +1,8 @@
 updating - private
 updateCurrentLoop
-	"Detect loop end and change."
+	"Detect loop end and change. Account for jumpy clocks."
 	
-	(self currentTime // self duration) >= self currentLoop
-		ifTrue: [self currentLoop: (self currentTime // self duration) + 1].
+	| actualLoop |
+	actualLoop := self currentTime // self duration.
+	actualLoop >= self currentLoop
+		ifTrue: [self currentLoop: actualLoop + 1].

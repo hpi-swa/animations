@@ -1,4 +1,4 @@
 accessing - private
-current: anObject
+current: anInteger
 
-	current := anObject
+	current := anInteger.

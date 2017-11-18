@@ -12,6 +12,7 @@ test02Running
 	sut start.
 	self assert: sut currentAnimation == a1.
 	self assert: a1 isRegistered.
+	self assert: sut isRegistered.
 	
 	self wait: 10.	
 	self assert: sut currentAnimation == a1.
@@ -28,4 +29,5 @@ test02Running
 
 	self wait: 100.
 	self assert: a2 finishedOnce.
+	self wait: 5.
 	self assert: sut finishedOnce.

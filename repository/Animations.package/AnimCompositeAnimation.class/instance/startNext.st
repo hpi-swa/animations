@@ -1,9 +1,7 @@
 updating - private
 startNext
 
-	self currentAnimation
-		stop;
-		unregister.
+	self currentAnimation unregister.
 
 	self direction = #forward
 		ifTrue: [self current: self current \\ self animations size + 1].
@@ -12,5 +10,5 @@ startNext
 		ifTrue: [self current: self current + self animations size - 2 \\ self animations size + 1].
 
 	self currentAnimation
-		start: #deleteWhenFinished;
+		start: self deletionPolicy;
 		register.
