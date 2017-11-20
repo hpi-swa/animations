@@ -28,7 +28,10 @@ Metacello new
   baseline: 'Animations';
   repository: 'github://hpi-swa/animations/repository';
   load.
+(Smalltalk classNamed: 'AnimMorphicProject') new enter.
 ```
+
+**You have to enter an `AnimMorphicProject` so that animations will actually run. A regular Morphic project will skip animations automatically.**
 
 ## Simple Example
 
@@ -168,7 +171,19 @@ myAnimation isStopped
 ```
 ### Using Processes
 
-The animation registry is thread-safe which means that `register` and `unregister` operations are secured and can be called from within any process. However, that process should have a higher priority than the Squeak UI process. Otherwise it could be problematic to acquire the mutex because every world cycle needs it too. 
+The animation registry is thread-safe which means that `register` and `unregister` operations are secured and can be called from within any process. However, that process should have a higher priority than the Squeak UI process. Otherwise it could be problematic to acquire the mutex because every world cycle needs it too.
+
+### Dynamic Scope
+
+If you want to change the registry used for `myAnimation register`, you have to set the dynamic scope:
+
+```Smalltalk
+AnimAnimationRegistry
+   value: myRegistry
+   during: [ "...some code with animations..." ]
+```
+
+*Note that this will not work for composite animations that have to register and unregister their parts as time passes. Works good for tests, though.*
 
 ## Graphics Animations
 
@@ -234,8 +249,10 @@ delay := AnimAnimation new
    yourself.
 ```
 
-You can add composite animations to composite animations to create complex sequences.
+You can add composite animations to composite animations to create complex sequences. See `Morph >> #pulse` for another example.
 
 Considering *infinite* animations (i.e. `loopCount == -1`), there is a simple check that tells you to
  * avoid more than one infinite animation in a composition
  * avoid a regular animation *after* an infinite animation in a composition
+ 
+*Note that we recommend the use of composite animations instead of finishBlocks if possible.*
