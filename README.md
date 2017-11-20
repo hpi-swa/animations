@@ -71,11 +71,11 @@ MyMorph>>stepTime
    ^ 16 "60 steps per second"
 
 MyMorph>>step
-   myAnimations do: [:anim | anim updateCurrentTime].
+   myAnimations do: [:anim | anim updateCurrentTime: WorldState lastCycleTime].
 
 "Using an extra process."
 [
-   myAnimations do: [:anim | anim updateCurrentTime].
+   myAnimations do: [:anim | anim updateCurrentTime: WorldState lastCycleTime].
    (Delay forMilliseconds: 16) wait. "Avoid high load. Get 60 cycles per second."
 ] fork.
 ```
