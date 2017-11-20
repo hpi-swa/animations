@@ -7,6 +7,7 @@
 1. [Property Animations](#property-animations)
 1. [How to Register Animations](#let-them-run--how-to-register-animations)
 1. [Graphics Animations](#graphics-animations)
+1. [Composite Animations](#composite-animations)
 
 In its current development state, the Morphic implementation of Squeak does not support an extensible mechanism that allows visually appealing transitions whenever a morph's state changes, e.g., positon, rotation, color.
 
@@ -18,7 +19,7 @@ This project provides such an extension to Morphic with the following key-featur
 
 ## How to Install
 
-1. Get [Squeak 4.4 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
+1. Get [Squeak 4.5 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
 2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
 3. Finally, load Animations into your Squeak image by executing the following snippet in a workspace:
 
@@ -28,8 +29,6 @@ Metacello new
   repository: 'github://hpi-swa/animations/repository';
   load.
 ```
-
-**Close all transcript windows before loading!**
 
 ## Simple Example
 
@@ -205,3 +204,38 @@ MyMorph>>fadeOut
 Color mappings apply to all submorphs in a morph. To prevent a morph from being color-mapped by its owner use the property `ignoresColorMappings`.
 
 If you want to hold a certain color mapping state, you must not delete an animation when it has finished. Otherwise the color mapping will disappear. An example would be to gray-out or darken a morph using `AnimBrightnessAnimation` or `AnimGrayscaleAnimation`. 
+
+## Composite Animations
+
+You can compose multiple animations into a sequence to be played one after another automatically:
+
+```Smalltalk
+AnimComposeAnimation new
+   add: (AnimSaturationAnimation new
+      morph: myMorph;
+      startValue: 1.0;
+      endValue: 0.0;
+      duration: 250);
+   add: (AnimSaturationAnimation new
+      morph: myMorph;
+      startValue: 0.0;
+      endValue: 1.0;
+      duration: 250);
+   loopCount: 1;
+   register;
+   start.
+```
+
+Use plain animations to add a delay to the composition:
+
+```Smalltalk
+delay := AnimAnimation new
+   duration: 1000; "milliseconds"
+   yourself.
+```
+
+You can add composite animations to composite animations to create complex sequences.
+
+Considering *infinite* animations (i.e. `loopCount == -1`), there is a simple check that tells you to
+ * avoid more than one infinite animation in a composition
+ * avoid a regular animation *after* an infinite animation in a composition
