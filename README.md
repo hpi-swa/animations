@@ -210,7 +210,7 @@ If you want to hold a certain color mapping state, you must not delete an animat
 You can compose multiple animations into a sequence to be played one after another automatically:
 
 ```Smalltalk
-AnimComposeAnimation new
+AnimCompositeAnimation new
    add: (AnimSaturationAnimation new
       morph: myMorph;
       startValue: 1.0;
