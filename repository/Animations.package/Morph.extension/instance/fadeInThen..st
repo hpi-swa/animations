@@ -5,6 +5,6 @@ fadeInThen: aBlock
 	(AnimAlphaBlendAnimation
 		fadeInOn: self
 		duration: 200)
-		finishBlock: aBlock;
+		finishBlock: [aBlock value];
 		register;
 		start: #deleteWhenFinished.
