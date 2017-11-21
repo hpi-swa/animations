@@ -9,7 +9,8 @@ testFloats
 		start: 0.0
 		end: 0.3234234234
 		duration: 200)
-		start.
+		start;
+		register.
 	
 	300 timesRepeat: [self wait: 1].
 	

@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"ex01move" : "mt 11/21/2017 11:41",
+		"ex02circle" : "mt 11/21/2017 14:47",
+		"on:between:within:" : "mt 11/21/2017 14:04" },
+	"instance" : {
+		"closePath" : "mt 11/21/2017 14:17",
+		"makeCircle" : "mt 11/21/2017 15:11",
+		"makeCircle:" : "mt 11/21/2017 15:11",
+		"points" : "mt 11/21/2017 11:12",
+		"points:" : "mt 11/21/2017 14:05",
+		"prototype" : "mt 11/21/2017 12:35",
+		"prototype:" : "mt 11/21/2017 11:12",
+		"setPath:duration:" : "mt 11/21/2017 15:09",
+		"setTarget:" : "mt 11/21/2017 12:34",
+		"updateAnimations" : "mt 11/21/2017 12:28" } }

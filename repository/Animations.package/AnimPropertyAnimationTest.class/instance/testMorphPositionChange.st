@@ -9,7 +9,8 @@ testMorphPositionChange
 		start: 0@0
 		end: 6@12
 		duration: 50)
-		start.
+		start;
+		register.
 		
 	self
 		wait: 25;

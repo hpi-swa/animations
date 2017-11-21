@@ -1,0 +1,15 @@
+{
+	"category" : "Animations-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 11/21/2017 11:12",
+	"instvars" : [
+		"points",
+		"prototype" ],
+	"name" : "AnimPathAnimation",
+	"pools" : [
+		 ],
+	"super" : "AnimCompositeAnimation",
+	"type" : "normal" }

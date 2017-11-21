@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnimPathAnimationTest",
+	"pools" : [
+		 ],
+	"super" : "AnimTimedAnimationTest",
+	"type" : "normal" }

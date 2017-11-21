@@ -9,7 +9,8 @@ testFloatsReversed2
 		start: 0.3
 		end: 0.0
 		duration: 200)
-		start.
+		start;
+		register.
 	
 	self wait: 500.
 	

@@ -1,9 +1,9 @@
 support
 wait: milliseconds
-	"Wait some time in terms of the main world cycle."
+	"Wait some time in terms of the main world cycle. Twice to assure correct start time."
 	
-	sut updateCurrentTime: referenceTime.
+	AnimAnimationRegistry value updateAnimations: referenceTime.
 
 	referenceTime := referenceTime + milliseconds.
 	
-	sut updateCurrentTime: referenceTime.
+	AnimAnimationRegistry value updateAnimations: referenceTime.

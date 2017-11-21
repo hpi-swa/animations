@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "mt 6/7/2010 15:23:41.44",
+		"setUp" : "mt 11/21/2017 12:00",
 		"testAnimationEndState" : "mt 5/12/2010 11:50:16.816",
 		"testAnimationStates" : "mt 5/12/2010 11:53:04.34",
 		"testFinishBlock" : "mt 12/1/2012 15:11:13.829",

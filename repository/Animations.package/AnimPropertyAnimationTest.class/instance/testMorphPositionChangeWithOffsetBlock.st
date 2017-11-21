@@ -10,7 +10,8 @@ testMorphPositionChangeWithOffsetBlock
 		end: 6@12
 		duration: 50)
 		offsetBlock: [10@10];
-		start.
+		start;
+		register.
 		
 	self
 		wait: 25;

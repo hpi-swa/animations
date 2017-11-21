@@ -2,7 +2,7 @@ testing
 testDarken
 
 	sut := AnimBrightnessAnimation darkenOn: morph to: 0.5 duration: 50.
-	sut start.
+	sut start; register.
 	
 	self
 		wait: 0;

@@ -2,7 +2,7 @@ testing
 testAlphaBlendFadeOut
 
 	sut := AnimAlphaBlendAnimation fadeOutOn: morph duration: 50.
-	sut start.
+	sut start; register.
 	
 	self
 		wait: 0;

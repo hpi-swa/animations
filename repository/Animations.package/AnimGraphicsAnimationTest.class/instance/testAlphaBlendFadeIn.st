@@ -2,12 +2,12 @@ testing
 testAlphaBlendFadeIn
 
 	sut := AnimAlphaBlendAnimation fadeInOn: morph duration: 50.
-	sut start.
+	sut start; register.
 	
 	self
 		wait: 0;
-		should: (sut transformedCanvas: canvas) alpha = 0.0;
+		assert: 0.0 equals: (sut transformedCanvas: canvas) alpha;
 		wait: 25;
-		should: ((sut transformedCanvas: canvas) alpha roundTo: 0.1) = 0.5;
+		assert: 0.5 equals: ((sut transformedCanvas: canvas) alpha roundTo: 0.1);
 		wait: 25;
-		should: ((sut transformedCanvas: canvas) alpha roundTo: 0.1) = 1.0.
+		assert: 1.0 equals: ((sut transformedCanvas: canvas) alpha roundTo: 0.1).

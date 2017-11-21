@@ -1,6 +1,6 @@
 private
-performTest
+runCase
 
 	AnimAnimationRegistry
 		value: AnimAnimationRegistry new
-		during: [super performTest].
+		during: [super runCase].

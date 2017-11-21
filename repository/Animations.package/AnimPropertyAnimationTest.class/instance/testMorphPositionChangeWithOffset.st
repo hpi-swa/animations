@@ -10,7 +10,8 @@ testMorphPositionChangeWithOffset
 		end: 6@12
 		duration: 50)
 		offset: 10@10;
-		start.
+		start;
+		register.
 		
 	self
 		wait: 25;

@@ -4,7 +4,7 @@ testGrayscale
 	| color mappedColor|
 	color := Color r: 0.4 g: 0.6 b: 0.5 alpha: 1.0.
 	sut := AnimGrayscaleAnimation grayOutOn: morph duration: 50.
-	sut start.
+	sut start; register.
 	
 	self wait: 50.
 	

@@ -6,7 +6,8 @@ testLinearInterpolation
 		duration: 50;
 		startValue: 1;
 		endValue: 50;
-		start.
+		start;
+		register.
 		
 	self
 		should: sut currentValue rounded = 1;

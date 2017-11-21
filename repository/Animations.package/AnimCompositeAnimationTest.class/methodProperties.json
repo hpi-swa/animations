@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performTest" : "mt 11/17/2017 16:38",
 		"setUp" : "mt 11/17/2017 16:26",
 		"test01Duration" : "mt 11/17/2017 16:27",
 		"test02Running" : "mt 11/18/2017 10:48",
@@ -11,5 +10,4 @@
 		"test05SingleInfinitePart" : "mt 11/17/2017 20:16",
 		"test06OnlyInfiniteEnd" : "mt 11/17/2017 20:24",
 		"test07SingleRun" : "mt 11/18/2017 09:57",
-		"test08Registration" : "mt 11/18/2017 12:08",
-		"wait:" : "mt 11/18/2017 10:47" } }
+		"test08Registration" : "mt 11/18/2017 12:08" } }
