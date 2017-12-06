@@ -9,8 +9,10 @@
 		"easingCurve",
 		"startValue",
 		"endValue",
-		"offset",
-		"offsetBlock" ],
+		"startOffset",
+		"startOffsetBlock",
+		"endOffset",
+		"endOffsetBlock" ],
 	"name" : "AnimVariantAnimation",
 	"pools" : [
 		 ],

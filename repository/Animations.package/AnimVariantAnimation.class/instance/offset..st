@@ -1,4 +1,5 @@
 accessing
 offset: aValue
 
-	offset := aValue.
+	self startOffset: aValue.
+	self endOffset: aValue.

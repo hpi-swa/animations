@@ -1,0 +1,4 @@
+accessing
+endOffsetBlock
+
+	^ endOffsetBlock

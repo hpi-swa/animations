@@ -1,13 +1,7 @@
 accessing
 currentValue
 
-	| v o |
-	v := self
-		interpolatedFrom: self startValue
-		to: self endValue
+	^ self
+		interpolatedFrom: self startValue + (self startOffset ifNil: [0])
+		to: self endValue + (self endOffset ifNil: [0])
 		progress: self currentLoopTime asFloat / ((self duration - 1) max: 1).
-	o := self offset.
-	
-	^ o
-		ifNil: [v]
-		ifNotNil: [v + o]

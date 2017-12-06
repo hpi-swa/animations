@@ -12,5 +12,8 @@ updateAnimations
 			duration: self prototype duration;
 			startValue: pt1;
 			endValue: pt2;
-			offset: self prototype offset;
+			startOffset: self prototype startOffset;
+			endOffset: self prototype endOffset;
+			startOffsetBlock: self prototype startOffsetBlock;
+			endOffsetBlock: self prototype endOffsetBlock;
 			yourself)].

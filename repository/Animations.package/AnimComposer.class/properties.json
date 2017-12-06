@@ -1,0 +1,15 @@
+{
+	"category" : "Animations-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"target",
+		"animation" ],
+	"name" : "AnimComposer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
