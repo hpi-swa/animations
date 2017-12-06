@@ -1,0 +1,23 @@
+{
+	"category" : "Animations-Graphics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"x",
+		"y",
+		"bg",
+		"h",
+		"w",
+		"map",
+		"form",
+		"endMap",
+		"endLine",
+		"newLine" ],
+	"name" : "AnimSpriteParser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

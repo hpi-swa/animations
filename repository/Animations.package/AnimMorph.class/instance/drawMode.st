@@ -1,0 +1,3 @@
+animation control
+drawMode
+	^ drawMode

@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"parse:skip:" : "mt 12/6/2017 10:53",
+		"parseFileNamed:skip:" : "mt 12/6/2017 10:53" },
+	"instance" : {
+		"peekHeight" : "mt 12/6/2017 10:49",
+		"peekWidth" : "mt 12/6/2017 10:49",
+		"skipEmptyLines" : "mt 12/6/2017 10:51",
+		"skipEmptyStripes" : "mt 12/6/2017 10:51",
+		"skipFilledLines" : "mt 12/6/2017 10:53",
+		"skipFilledStripes" : "mt 12/6/2017 10:52",
+		"tileSize" : "mt 12/6/2017 10:56",
+		"tileSize:" : "mt 12/6/2017 10:47" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Graphics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tileSize" ],
+	"name" : "AnimTileParser",
+	"pools" : [
+		 ],
+	"super" : "AnimSpriteParser",
+	"type" : "normal" }

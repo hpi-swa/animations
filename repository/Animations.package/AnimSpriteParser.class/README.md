@@ -1,0 +1,1 @@
+Helper class to parse a big form into smaller forms. Uses a background color to detect sprite boundaries. Supports dynamic heights per (horizontal) line and widths per (horizontal) stripe.

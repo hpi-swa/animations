@@ -9,12 +9,8 @@ fullDrawAnimatedOn: aCanvas
 	(self hasProperty: #errorOnDraw)
 		ifTrue:[^ self drawErrorOn: aCanvas].
 
-	"Get the correct canvas for graphics animations."
-	transformedCanvas := self ignoresColorMappings
-		ifTrue: [aCanvas originalCanvas]
-		ifFalse: [Project current animations transformedCanvasFor: self from: aCanvas].
-		
-	(Project current animations isAtLeastOneGraphicsAnimationRunningFor: self)
+	transformedCanvas := self transformedCanvasFrom: aCanvas.	
+	self hasAnimationRunning
 		ifTrue: [self invalidRect: (transformedCanvas clipRect intersect: self fullBounds)].
 	
 	self fullDrawOn: transformedCanvas.

@@ -1,0 +1,19 @@
+{
+	"category" : "Animations-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"animatedStates",
+		"currentFrame",
+		"currentDirection",
+		"currentState",
+		"drawMode",
+		"lastFrame" ],
+	"name" : "AnimMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

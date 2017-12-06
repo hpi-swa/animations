@@ -11,7 +11,8 @@
 		"fadeInThen:" : "mt 6/7/2010 15:24:37.806",
 		"fadeOut" : "mt 5/17/2010 14:56:48.698",
 		"fadeOutThen:" : "mt 6/7/2010 15:24:37.768",
-		"fullDrawAnimatedOn:" : "mt 7/8/2015 10:52",
+		"fullDrawAnimatedOn:" : "mt 12/4/2017 11:27",
+		"hasAnimationRunning" : "mt 12/4/2017 11:23",
 		"ignoresColorMappings" : "mt 5/17/2010 16:42:06.037",
 		"ignoresColorMappings:" : "mt 5/17/2010 16:34:56.54",
 		"lighten" : "mt 5/3/2012 09:44:44.756",
@@ -21,6 +22,6 @@
 		"redrawLater" : "mt 6/16/2010 11:59:55.64",
 		"resumeAnimations" : "mt 11/17/2017 17:58",
 		"stopAnimations" : "mt 11/17/2017 17:58",
-		"transformedCanvasOn:" : "mt 4/16/2015 15:16",
+		"transformedCanvasFrom:" : "mt 12/4/2017 11:26",
 		"walkToPosition:" : "mt 6/7/2010 15:25:32.226",
 		"warpToPosition:" : "mt 5/18/2010 17:52:00.59" } }

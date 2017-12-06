@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"parse:" : "mt 12/6/2017 08:28",
+		"parse:skip:" : "mt 12/6/2017 08:29",
+		"parseFileNamed:" : "mt 12/6/2017 08:29",
+		"parseFileNamed:skip:" : "mt 12/6/2017 08:30" },
+	"instance" : {
+		"backgroundColor:" : "mt 12/6/2017 08:27",
+		"initializeFrom:" : "mt 12/6/2017 10:56",
+		"map" : "mt 12/5/2017 09:49",
+		"nextSprite" : "mt 12/6/2017 10:44",
+		"parse" : "mt 12/6/2017 10:31",
+		"peekHeight" : "mt 12/6/2017 10:44",
+		"peekWidth" : "mt 12/6/2017 10:44",
+		"reset" : "mt 12/6/2017 10:55",
+		"skipEmptyLines" : "mt 12/5/2017 10:37",
+		"skipEmptyStripes" : "mt 12/5/2017 10:37",
+		"skipFilledLines" : "mt 12/5/2017 10:37",
+		"skipFilledStripes" : "mt 12/5/2017 10:37" } }

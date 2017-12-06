@@ -1,0 +1,4 @@
+accessing
+currentState
+
+	^ currentState
