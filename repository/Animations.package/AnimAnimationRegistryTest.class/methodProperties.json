@@ -3,4 +3,5 @@
 		 },
 	"instance" : {
 		"setUp" : "mt 4/16/2015 15:33",
-		"testMorphDeletion" : "mt 4/16/2015 15:34" } }
+		"test01MorphDeletion" : "mt 12/6/2017 16:22",
+		"test02Registry" : "mt 12/8/2017 10:54" } }

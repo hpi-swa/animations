@@ -3,4 +3,4 @@ setTarget: aMorph
 
 	self prototype
 		target: aMorph;
-		offset: aMorph topLeft.
+		offsetBlock: [aMorph topLeft].

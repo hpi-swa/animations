@@ -4,10 +4,10 @@
 	"instance" : {
 		"setUp" : "mt 11/17/2017 16:26",
 		"test01Duration" : "mt 11/17/2017 16:27",
-		"test02Running" : "mt 11/18/2017 10:48",
-		"test03LoopTwice" : "mt 11/18/2017 12:02",
-		"test04LoopInfinite" : "mt 11/17/2017 17:26",
+		"test02Running" : "mt 12/8/2017 10:53",
+		"test03LoopTwice" : "mt 12/8/2017 11:48",
+		"test04LoopInfinite" : "mt 12/8/2017 12:00",
 		"test05SingleInfinitePart" : "mt 11/17/2017 20:16",
 		"test06OnlyInfiniteEnd" : "mt 11/17/2017 20:24",
 		"test07SingleRun" : "mt 11/18/2017 09:57",
-		"test08Registration" : "mt 11/18/2017 12:08" } }
+		"test08Registration" : "mt 12/8/2017 12:00" } }

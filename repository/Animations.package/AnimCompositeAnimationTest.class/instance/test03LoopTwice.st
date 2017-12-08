@@ -12,14 +12,14 @@ test03LoopTwice
 
 	sut start.
 
-	self wait: 10; wait:  10.
+	self wait: 20.
 	self assert: sut currentAnimation == a2.
 	self assert: 1 equals: sut currentLoop.
 	
-	self wait: 40; wait: 5.
+	self wait: 60. "Note that animation switching takes a cycle which is 'wait: 5' in this test. See #wait:."
 	self assert: sut currentAnimation == a1.
 	self assert: 2 equals: sut currentLoop.
 	self deny: sut finishedOnce.
 	
-	self wait: 15; wait: 50; wait: 0.
+	self wait: 75.
 	self assert: sut finishedOnce.

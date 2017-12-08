@@ -10,10 +10,8 @@ updateAnimations
 			target: self prototype target;
 			property: self prototype property;
 			duration: self prototype duration;
-			startValue: pt1;
-			endValue: pt2;
-			startOffset: self prototype startOffset;
-			endOffset: self prototype endOffset;
+			startValue: 0;
+			endValue: pt2 - pt1;
 			startOffsetBlock: self prototype startOffsetBlock;
 			endOffsetBlock: self prototype endOffsetBlock;
 			yourself)].

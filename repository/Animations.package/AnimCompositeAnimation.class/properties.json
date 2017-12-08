@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"animations",
-		"current" ],
+		"currentIndex" ],
 	"name" : "AnimCompositeAnimation",
 	"pools" : [
 		 ],

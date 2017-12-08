@@ -1,4 +1,4 @@
 accessing
 currentAnimation
 
-	^ self animations at: self current ifAbsent: []
+	^ self animations at: self currentIndex

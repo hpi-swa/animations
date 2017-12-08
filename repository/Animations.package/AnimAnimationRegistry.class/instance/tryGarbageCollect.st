@@ -12,6 +12,6 @@ tryGarbageCollect
 	interval < 5000
 		ifTrue: [^ self].
 		
-	self mutex critical: [self garbageCollect].
+	self garbageCollect.
 	
 	lastGCTime := DateAndTime now.

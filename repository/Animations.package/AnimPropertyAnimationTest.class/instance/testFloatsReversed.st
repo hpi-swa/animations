@@ -12,6 +12,6 @@ testFloatsReversed
 		start;
 		register.
 	
-	300 timesRepeat: [self wait: 1].
+	self wait: 300.
 	
 	self should: valueHolder contents = 0.0.

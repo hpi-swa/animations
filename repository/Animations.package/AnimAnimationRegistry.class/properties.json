@@ -1,8 +1,7 @@
 {
 	"category" : "Animations-Core",
 	"classinstvars" : [
-		"instance",
-		"morphicDrawBlock" ],
+		"instance" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "mt 5/17/2010 15:48:31.878",
@@ -11,7 +10,7 @@
 		"graphicsAnimations",
 		"compositeAnimations",
 		"otherAnimations",
-		"mutex",
+		"pendingRequests",
 		"lastGCTime",
 		"referenceTime" ],
 	"name" : "AnimAnimationRegistry",

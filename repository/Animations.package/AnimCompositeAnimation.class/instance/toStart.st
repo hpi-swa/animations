@@ -3,13 +3,9 @@ toStart
 
 	super toStart.
 
-	self currentAnimation ifNotNil: [:anim | anim unregister].
-
 	self direction = #forward
-		ifTrue: [self current: 1].
+		ifTrue: [self changeCurrentIndex: 1].
 	self direction = #backward
-		ifTrue: [self current: self animations size].
+		ifTrue: [self changeCurrentIndex: self animations size].
 		
-	self currentAnimation
-		toStart;
-		register.
+	self currentAnimation toStart.

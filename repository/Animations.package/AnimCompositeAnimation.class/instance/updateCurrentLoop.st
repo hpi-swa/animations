@@ -6,6 +6,7 @@ updateCurrentLoop
 			
 			self startNext.
 			
-			((self direction = #forward and: [self current = 1])
-				or: [self direction = #backward and: [self current = self animations size]])
+			"After each cycle, increase the loop count."
+			((self direction = #forward and: [self currentIndex = 1])
+				or: [self direction = #backward and: [self currentIndex = self animations size]])
 					ifTrue: [self currentLoop: self currentLoop + 1]]].

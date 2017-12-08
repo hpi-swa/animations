@@ -1,0 +1,1 @@
+Composite animations register automatically.

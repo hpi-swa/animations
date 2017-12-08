@@ -11,8 +11,11 @@ test02Running
 
 	sut start.
 	self assert: sut currentAnimation == a1.
-	self assert: a1 isRegistered.
+	self assert: 2 equals: AnimAnimationRegistry value pendingRequests size.
+
+	self wait: 0.
 	self assert: sut isRegistered.
+	self assert: a1 isRegistered.
 	
 	self wait: 10.	
 	self assert: sut currentAnimation == a1.
