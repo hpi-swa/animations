@@ -1,8 +1,7 @@
 updating - private
 updateAnimations
 
-	self isStopped ifFalse: [Error signal: 'You cannot update the animations while they are running.'].
-	
+	self isStopped ifFalse: [self stop].
 	self animations removeAll.
 	
 	self points overlappingPairsDo: [:pt1 :pt2 |

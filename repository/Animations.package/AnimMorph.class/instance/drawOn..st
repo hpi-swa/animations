@@ -1,4 +1,4 @@
-updating
+drawing
 drawOn: aCanvas
 
 	self currentFrame ifNotNil: [:form |

@@ -18,6 +18,7 @@
 		"resetAfterFinished",
 		"finishedOnce",
 		"finishBlock",
+		"startBlock",
 		"name" ],
 	"name" : "AnimAnimation",
 	"pools" : [

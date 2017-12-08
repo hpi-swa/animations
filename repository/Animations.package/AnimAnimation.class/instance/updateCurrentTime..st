@@ -6,7 +6,8 @@ updateCurrentTime: referenceTime
 	
 	"Set an accurate start time in the first update cycle."
 	self startTime ifNil: [
-		self startTime: referenceTime].
+		self startTime: referenceTime.
+		self startBlock value].
 
 	self isRunning ifTrue: [
 		self
