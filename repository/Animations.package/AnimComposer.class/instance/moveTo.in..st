@@ -7,6 +7,6 @@ moveTo: aPoint in: milliseconds
 			property: #position;
 			startValue: 0;
 			endValue: aPoint;
-			startOffsetBlock: [self target position];
+			startOffsetBlock: [:obj | obj position];
 			duration: milliseconds;
 			yourself).

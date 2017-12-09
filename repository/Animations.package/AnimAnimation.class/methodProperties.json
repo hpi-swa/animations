@@ -2,6 +2,7 @@
 	"class" : {
 		"null" : "mt 12/4/2017 13:39" },
 	"instance" : {
+		"canFinish" : "mt 12/9/2017 12:55",
 		"currentLoop" : "mt 5/12/2010 10:32:58.926",
 		"currentLoop:" : "mt 5/14/2010 11:00:46.441",
 		"currentLoopProgress" : "mt 12/8/2017 14:06",
@@ -15,7 +16,9 @@
 		"direction:" : "mt 5/14/2010 11:23:30.9",
 		"duration" : "mt 5/12/2010 11:10:27.148",
 		"duration:" : "mt 11/17/2017 21:03",
-		"finish" : "mt 11/17/2017 17:20",
+		"evaluateFinishBlock" : "mt 12/9/2017 10:15",
+		"evaluateStartBlock" : "mt 12/9/2017 10:15",
+		"finish" : "mt 12/9/2017 10:16",
 		"finishBlock" : "mt 12/8/2017 15:24",
 		"finishBlock:" : "mt 5/17/2010 14:13:38.918",
 		"finishedOnce" : "mt 5/14/2010 20:17:01.832",
@@ -28,6 +31,7 @@
 		"isRegistered" : "mt 11/17/2017 17:36",
 		"isRunning" : "mt 5/12/2010 09:53:29.451",
 		"isStopped" : "mt 5/12/2010 09:53:26.603",
+		"isValid" : "mt 12/9/2017 12:59",
 		"loopCount" : "mt 5/12/2010 09:36:21.713",
 		"loopCount:" : "mt 5/12/2010 09:42:34.762",
 		"name" : "mt 11/18/2017 11:35",
@@ -35,7 +39,7 @@
 		"pause" : "mt 5/12/2010 10:35:33.769",
 		"pauseDuration" : "mt 5/12/2010 10:21:00.008",
 		"pauseDuration:" : "mt 5/12/2010 10:21:32.48",
-		"printOn:" : "mt 12/8/2017 14:11",
+		"printOn:" : "mt 12/9/2017 09:40",
 		"register" : "mt 11/17/2017 16:35",
 		"reset" : "mt 5/15/2010 18:23:43.585",
 		"resetAfterFinished" : "mt 5/12/2010 10:50:47.79",
@@ -56,5 +60,5 @@
 		"totalDuration" : "mt 5/12/2010 09:33:30.059",
 		"unregister" : "mt 11/17/2017 16:35",
 		"updateCurrentLoop" : "mt 11/18/2017 09:53",
-		"updateCurrentTime:" : "mt 12/8/2017 15:27",
+		"updateCurrentTime:" : "mt 12/9/2017 10:15",
 		"updateState" : "mt 5/12/2010 10:55:07.045" } }

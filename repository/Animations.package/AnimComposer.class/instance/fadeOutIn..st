@@ -8,6 +8,6 @@ fadeOutIn: milliseconds
 		AnimAlphaBlendAnimation
 			fadeOutOn: self target
 			duration: milliseconds)
-				startBlock: [self target show];
-				finishBlock: [self target hide];
+				startBlock: [:morph | morph show];
+				finishBlock: [:morph | morph hide];
 				yourself)

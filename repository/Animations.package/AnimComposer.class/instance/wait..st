@@ -1,4 +1,8 @@
 actions
 wait: milliseconds
 
-	self animation add: (AnimAnimation new duration: milliseconds; yourself).
+	self animation add: (
+		AnimAnimation new
+			name: 'wait';
+			duration: milliseconds;
+			yourself).

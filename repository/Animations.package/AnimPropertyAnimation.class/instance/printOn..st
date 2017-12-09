@@ -3,6 +3,7 @@ printOn: stream
 
 	super printOn: stream.
 	
-	self target ifNotNil: [:obj |
-		stream space.
-		obj printOn: stream].
+	stream space.
+	self target
+		ifNotNil: [:obj | obj printOn: stream]
+		ifNil: [stream nextPutAll: '<no target>'].

@@ -3,6 +3,7 @@ printOn: stream
 
 	super printOn: stream.
 	
-	self morph ifNotNil: [:obj |
-		stream space.
-		obj printOn: stream].
+	stream space.
+	self morph
+		ifNotNil: [:obj | obj printOn: stream]
+		ifNil: [stream nextPutAll: '<no morph>'].

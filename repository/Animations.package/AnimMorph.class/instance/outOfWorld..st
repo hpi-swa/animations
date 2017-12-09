@@ -1,5 +1,5 @@
 initialization
 outOfWorld: aWorld
 
-	self currentAnimation stop; unregister.
+	self discardAnimation.
 	super outOfWorld: aWorld.

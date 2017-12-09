@@ -11,4 +11,4 @@ finish
 		finishedOnce: true;
 		changed: #finished.
 		
-	self finishBlock value.
+	self evaluateFinishBlock.

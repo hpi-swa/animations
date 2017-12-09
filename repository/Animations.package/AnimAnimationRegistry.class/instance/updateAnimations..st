@@ -1,6 +1,7 @@
 updating
 updateAnimations: milliseconds
 
+	self tryGarbageCollect.
 	self updateRegistry.	
 
 	[[
@@ -11,6 +12,3 @@ updateAnimations: milliseconds
 	]
 		on: Error do: [:ex | self emergencyClearFor: ex]]
 		on: Halt do: [:ex | self emergencyClearFor: ex].
-
-	self tryGarbageCollect.
-	self updateRegistry.

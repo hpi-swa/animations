@@ -8,5 +8,5 @@ fadeInIn: milliseconds
 		AnimAlphaBlendAnimation
 			fadeInOn: self target
 			duration: milliseconds)
-				startBlock: [self target show];
+				startBlock: [:morph | morph show];
 				yourself)
