@@ -1,0 +1,14 @@
+{
+	"category" : "Animations-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnimParagraphAnimation",
+	"pools" : [
+		 ],
+	"super" : "AnimGraphicsAnimation",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Animations-Canvas",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"startIndex",
+		"stopIndex" ],
+	"name" : "AnimParagraphCanvas",
+	"pools" : [
+		 ],
+	"super" : "AnimColorMappingCanvas",
+	"type" : "normal" }
