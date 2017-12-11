@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"brush" : "mt 12/11/2017 10:35",
+		"brush:" : "mt 12/11/2017 10:56",
+		"fill:" : "mt 12/11/2017 10:33",
+		"initialize" : "mt 12/11/2017 10:51",
+		"paintAt:" : "mt 12/11/2017 12:41",
+		"palette" : "mt 12/11/2017 09:52",
+		"palette:" : "mt 12/11/2017 09:52",
+		"paletteTileAt:" : "mt 12/11/2017 09:54",
+		"surface" : "mt 12/11/2017 09:52",
+		"surface:" : "mt 12/11/2017 09:52",
+		"surfaceExtent" : "mt 12/11/2017 10:07",
+		"surfaceExtent:" : "mt 12/11/2017 10:44",
+		"tileAt:" : "mt 12/11/2017 09:50",
+		"tileAt:put:" : "mt 12/11/2017 10:15",
+		"tileExtent" : "mt 12/11/2017 09:56",
+		"tilesAt:" : "mt 12/11/2017 10:40",
+		"tilesUnpacked" : "mt 12/11/2017 09:56" } }
