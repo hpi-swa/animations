@@ -1,4 +1,4 @@
 actions
 warpTo: aPoint
 
-	self warpTo: aPoint in: self defaultDuration.
+	^ self warpTo: aPoint in: self defaultDuration

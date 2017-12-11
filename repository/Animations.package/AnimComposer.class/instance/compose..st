@@ -9,4 +9,4 @@ compose: block
 		
 	block value: composer.
 	
-	self animations add: composer animation.
+	^ self animations add: composer animation

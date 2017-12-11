@@ -6,10 +6,10 @@ do: block
 	block outerContextsDo: [:ctxt |
 		ctxt receiver == self target ifTrue: [ctxt receiver: nil]].
 		
-	self animation add: (
+	^ self animation add: (
 		AnimAnimation new
 			name: 'do';
 			duration: 1;
 			loopCount: 1;
 			finishBlock: [(target at: 1) ifNotNil: [:obj | block value: obj]];
-			yourself).
+			yourself)

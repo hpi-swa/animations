@@ -10,4 +10,4 @@ add: anAnimation
 			(self animations anySatisfy: [:ea | ea isInfinite])
 				ifTrue: [Error signal: 'You cannot add a regular animation after an infinite one.']].
 	
-	self animations add: anAnimation.
+	^ self animations add: anAnimation

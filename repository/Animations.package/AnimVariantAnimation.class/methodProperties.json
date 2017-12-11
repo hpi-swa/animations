@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"currentValue" : "mt 12/6/2017 12:26",
+		"currentEndValue" : "mt 12/11/2017 08:05",
+		"currentStartValue" : "mt 12/11/2017 08:05",
+		"currentValue" : "mt 12/11/2017 08:10",
 		"easingCurve" : "mt 6/7/2010 15:27:00.533",
 		"easingCurve:" : "mt 5/14/2010 12:42:22.17",
 		"endOffset" : "mt 12/6/2017 12:24",

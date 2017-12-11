@@ -1,4 +1,4 @@
 actions
 fadeIn
 
-	self fadeInIn: self defaultDuration.
+	^ self fadeInIn: self defaultDuration

@@ -1,9 +1,20 @@
 drawing
 paragraph: p bounds: b color: c
-	"Manipulate text lines. Start index not used at the moment because rendering would be jumpy. DO NOT change canvas state because the canvas will be reused for several drawing operations."
+	"Manipulate text line endings. DO NOT change canvas state here because the canvas might be re-used for several drawing operations in the graphical hierarchy."
 	
-	| oldLines found actualStop |
-	actualStop := self stopIndex min: p text size.
+	| oldLines found actualStop scale |
+	self max ~= -1
+		ifTrue: [
+			self max
+				ifNil: [self max: p text size]
+				ifNotNil: [:currentMax | self max: (currentMax max: p text size)].
+			scale := self max / (p text size max: 1)]
+		ifFalse: [
+			scale := 1.0].
+		
+	actualStop := self relative
+		ifFalse: [(self stopIndex * scale) rounded min: p text size]
+		ifTrue: [(p text size * self stopIndex * scale) rounded].
 	
 	actualStop >= p text size
 		ifTrue: [^ super paragraph: p bounds: b color: c].
@@ -15,7 +26,7 @@ paragraph: p bounds: b color: c
 		oldLines at: index put: line last.
 		found
 			ifFalse: [
-				self stopIndex > line last
+				actualStop > line last
 					ifFalse: [
 						line
 							firstIndex: line first

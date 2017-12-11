@@ -4,7 +4,7 @@ fadeOutIn: milliseconds
 	
 	self target isMorph ifFalse: [Error signal: 'Only morphs can fade.'].
 	
-	self animation add: ((
+	^ self animation add: ((
 		AnimAlphaBlendAnimation
 			fadeOutOn: self target
 			duration: milliseconds)

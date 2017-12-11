@@ -1,4 +1,4 @@
 actions
 moveBy: aPoint
 
-	self moveBy: aPoint in: self defaultDuration.
+	^ self moveBy: aPoint in: self defaultDuration

@@ -1,4 +1,4 @@
 actions
 moveTo: aPoint
 
-	self moveTo: aPoint in: self defaultDuration.
+	^ self moveTo: aPoint in: self defaultDuration

@@ -1,6 +1,6 @@
 actions
 moveAlong: relativePoints
 
-	self
+	^ self
 		moveAlong: relativePoints
-		in: self defaultDuration * (relativePoints - 1).
+		in: self defaultDuration * (relativePoints - 1)

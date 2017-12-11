@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"startIndex",
-		"stopIndex" ],
+		"stopIndex",
+		"relative",
+		"max" ],
 	"name" : "AnimParagraphCanvas",
 	"pools" : [
 		 ],

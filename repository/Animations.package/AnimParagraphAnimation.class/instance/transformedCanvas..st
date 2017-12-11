@@ -1,7 +1,17 @@
 interpolating
 transformedCanvas: aCanvas
 
-	^ (AnimParagraphCanvas
+	| lastMax |
+	lastMax := self scaled ifFalse: [-1] ifTrue: [
+		lastCanvas
+			ifNil: [0]
+			ifNotNil: [:c | c max]].
+		
+	lastCanvas := (AnimParagraphCanvas
 		on: aCanvas)
-		startIndex: self startValue;
-		stopIndex: self currentValue rounded
+			stopIndex: self currentValue;
+			relative: (self currentStartValue + self currentEndValue) < 2;
+			max: lastMax;
+			yourself.
+			
+	^ lastCanvas

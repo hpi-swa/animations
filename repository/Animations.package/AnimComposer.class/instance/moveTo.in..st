@@ -1,7 +1,7 @@
 actions
 moveTo: aPoint in: milliseconds
 
-	self animation add: (
+	^ self animation add: (
 		AnimPropertyAnimation new
 			target: self target;
 			property: #position;
@@ -9,4 +9,4 @@ moveTo: aPoint in: milliseconds
 			endValue: aPoint;
 			startOffsetBlock: [:obj | obj position];
 			duration: milliseconds;
-			yourself).
+			yourself)
