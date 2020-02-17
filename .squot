@@ -1,0 +1,4 @@
+OrderedDictionary {
+	'repository\/BaselineOfAnimations.package' : nil,
+	'repository\/Animations.package' : #SquotCypressCodeSerializer
+}
