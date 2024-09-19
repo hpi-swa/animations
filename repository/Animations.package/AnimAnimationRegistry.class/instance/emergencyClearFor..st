@@ -8,4 +8,4 @@ emergencyClearFor: anExeption
 	self inform: 'There was an exception in the Animations framework.
 All animations were cleared.
 
-A debugger should have been appeared.'.
+A debugger should have appeared.'.
